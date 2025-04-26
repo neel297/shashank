@@ -1,48 +1,19 @@
-
 import AnimatedElement from "../ui/AnimatedElement";
 import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    position: "Senior Pharmacist",
-    company: "Medical Center Pharmacy",
-    location: "City, State",
-    period: "2022 - Present",
-    description: "Managing pharmacy operations and ensuring optimal patient care through effective medication management.",
-    responsibilities: [
-      "Supervise pharmacy staff and daily operations",
-      "Review and verify prescription accuracy and appropriateness",
-      "Provide medication counseling to patients",
-      "Implement medication safety protocols",
-      "Collaborate with healthcare providers on medication therapy management"
-    ]
-  },
-  {
-    position: "Clinical Pharmacist",
-    company: "General Hospital",
-    location: "City, State",
-    period: "2020 - 2022",
-    description: "Worked in a clinical setting providing pharmaceutical care to inpatients and collaborating with the healthcare team.",
-    responsibilities: [
-      "Conducted medication reviews and reconciliation",
-      "Participated in multidisciplinary patient care rounds",
-      "Monitored drug therapies for safety and efficacy",
-      "Provided drug information to healthcare professionals",
-      "Assisted in managing adverse drug reactions"
-    ]
-  },
-  {
     position: "Pharmacy Intern",
-    company: "Community Pharmacy",
-    location: "City, State",
-    period: "2019 - 2020",
-    description: "Gained hands-on experience in retail pharmacy operations under the supervision of licensed pharmacists.",
+    company: "Park Benz Laboratories",
+    location: "Mandideep, Raisen",
+    period: "June 15, 2024 - July 15, 2024",
+    description: "Gained hands-on experience in the manufacturing environment for parenteral products, focusing on key operational areas including production, cleaning, packaging, and quality control.",
     responsibilities: [
-      "Assisted in prescription processing and dispensing",
-      "Learned inventory management and stock control",
-      "Observed patient counseling sessions",
-      "Participated in health screening events",
-      "Helped implement medication adherence programs"
+      "Observed the aseptic filling process for Pantoprazole injection",
+      "Observed and performed sterilization and cleaning processes for glass vials/containers",
+      "Gained familiarity with primary and secondary packaging materials",
+      "Packed Pantoprazole-filled containers into primary packaging",
+      "Understood the importance of in-process checks and documentation"
     ]
   }
 ];

@@ -1,13 +1,20 @@
 
 import Button from "../ui/Button";
 import AnimatedElement from "../ui/AnimatedElement";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Send } from "lucide-react";
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -24,34 +31,31 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedElement animation="fade-right">
             <div className="text-center lg:text-left">
-              <p className="text-pharma-600 font-medium mb-4">B.Pharmacy Professional</p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair mb-6">
-                Shashank <span className="text-gradient">Mohan Pandey</span>
+              <p className="text-pharma-600 font-medium mb-4">Pharmaceutical Professional</p>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair mb-2">
+                Shashank <span className="text-gradient">Pandey</span>
               </h1>
+              <p className="text-xl md:text-2xl text-gray-700 mb-4 font-playfair">
+                Pharmacist, B.Pharmacy
+              </p>
               <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0">
-                Dedicated pharmaceutical professional with expertise in medicine management,
-                patient care, and healthcare innovation.
+                Dedicated pharmaceutical professional with expertise in medication management, patient counseling, and healthcare solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg"
-                  onClick={scrollToAbout}
+                  onClick={scrollToContact}
                   className="group"
                 >
-                  Explore My Profile
-                  <ChevronDown className="ml-2 transition-transform group-hover:translate-y-1" />
+                  Contact Me
+                  <Send className="ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
                 <Button 
                   variant="outline"
                   size="lg" 
-                  onClick={() => {
-                    const contactSection = document.getElementById("contact");
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: "smooth" });
-                    }
-                  }}
+                  onClick={scrollToProjects}
                 >
-                  Get In Touch
+                  View Projects
                 </Button>
               </div>
             </div>

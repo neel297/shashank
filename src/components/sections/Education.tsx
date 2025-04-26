@@ -1,44 +1,42 @@
-
 import AnimatedElement from "../ui/AnimatedElement";
-import { Calendar } from "lucide-react";
+import { Calendar, GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "Bachelor of Pharmacy (B.Pharm)",
-    institution: "College of Pharmacy",
-    location: "University Name",
-    period: "2016 - 2020",
-    description: "Comprehensive study of pharmaceutical sciences including pharmacology, medicinal chemistry, pharmaceutics, and clinical pharmacy. Graduated with distinction.",
+    degree: "Bachelor of Pharmacy (B.Pharmacy)",
+    institution: "AKS University",
+    location: "Satna",
+    period: "2021 - 2025",
+    description: "Comprehensive study of pharmaceutical sciences, including pharmacology, medicinal chemistry, pharmaceutics, and clinical pharmacy. Currently pursuing with focus on developing expertise in medication management and patient care.",
     achievements: [
-      "Graduated with First Class Honors",
-      "Specialized in Clinical Pharmacy practices",
-      "Participated in pharmaceutical research projects",
-      "Received academic excellence award"
+      "Focus on pharmaceutical sciences and patient care",
+      "Developing expertise in medication management",
+      "Studying clinical pharmacy practices",
+      "Learning advanced pharmacology concepts"
     ]
   },
   {
-    degree: "Pharmacy Internship",
-    institution: "General Hospital",
-    location: "City Name",
-    period: "2019 - 2020",
-    description: "One-year mandatory internship program focused on practical training in hospital pharmacy settings, gaining hands-on experience in medication management and patient care.",
+    degree: "Secondary School Certificate (12th Grade)",
+    institution: "Simran Public School",
+    location: "Maihar",
+    period: "Completed 2021",
+    description: "Completed higher secondary education with a specialization in Biology, which developed my interest and provided the essential foundation for pursuing pharmaceutical studies.",
     achievements: [
-      "Rotated through various pharmacy departments",
-      "Participated in medication reconciliation processes",
-      "Assisted in inventory management",
-      "Contributed to patient counseling initiatives"
+      "Specialized in Biology",
+      "Built foundation for pharmaceutical studies",
+      "Developed interest in healthcare sciences"
     ]
   },
   {
-    degree: "Professional Certification",
-    institution: "Pharmaceutical Council",
-    location: "State/National Level",
-    period: "2020",
-    description: "Obtained professional certification after successfully completing the licensure examination, authorizing practice as a registered pharmacist.",
+    degree: "Professional Development",
+    institution: "Various Institutions",
+    location: "Multiple Locations",
+    period: "2021 - Present",
+    description: "Continuous professional development through various programs and seminars.",
     achievements: [
-      "Passed the licensure examination in the first attempt",
-      "Received comprehensive training in pharmaceutical ethics",
-      "Completed requirements for professional registration"
+      "Pharma Management Programme - Institute of Pharmaceutical Education and Research (IPER)",
+      "Art of Facing Interviews and Techniques in the Pharma Sector - IPER",
+      "Graduate Employability Enhancement Training (GEET) - Infosys, Learnet Skills Limited"
     ]
   }
 ];

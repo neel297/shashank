@@ -1,51 +1,24 @@
-
 import { Card, CardContent } from "../ui/card";
 import Button from "../ui/Button";
 import AnimatedElement from "../ui/AnimatedElement";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, BookOpen, Microscope } from "lucide-react";
 
 const projects = [
   {
-    title: "Medication Adherence Program",
-    category: "Clinical Practice",
-    description: "Developed and implemented a comprehensive medication adherence program focused on improving patient compliance through education, packaging solutions, and follow-up systems.",
-    tags: ["Patient Care", "Education", "Program Development"],
-    image: "bg-gradient-to-br from-pharma-500 to-pharma-700"
+    title: "Hospital Pharmacy Report",
+    category: "Academic Project",
+    description: "Authored a comprehensive report exploring aspects of hospital pharmacy operations, focusing on medication management systems, inventory control, and patient safety protocols.",
+    tags: ["Report Writing", "Research", "Analysis"],
+    image: "bg-gradient-to-br from-pharma-500 to-pharma-700",
+    icon: BookOpen
   },
   {
-    title: "Pharmacy Workflow Optimization",
-    category: "Operations",
-    description: "Redesigned pharmacy workflow processes to reduce wait times by 40% and minimize dispensing errors, improving both patient satisfaction and safety metrics.",
-    tags: ["Process Improvement", "Safety", "Efficiency"],
-    image: "bg-gradient-to-br from-teal-500 to-teal-700"
-  },
-  {
-    title: "Drug Interaction Database",
-    category: "Research",
-    description: "Contributed to the development of a specialized drug interaction database focused on geriatric medications, helping reduce adverse drug events in elderly patients.",
-    tags: ["Research", "Database", "Patient Safety"],
-    image: "bg-gradient-to-br from-purple-500 to-purple-700"
-  },
-  {
-    title: "Community Health Screening Initiative",
-    category: "Public Health",
-    description: "Organized and led community health screening events providing free blood pressure, glucose monitoring, and medication reviews to underserved populations.",
-    tags: ["Community Service", "Health Promotion", "Screening"],
-    image: "bg-gradient-to-br from-blue-500 to-blue-700"
-  },
-  {
-    title: "Pharmaceutical Waste Management Protocol",
-    category: "Environmental",
-    description: "Developed and implemented a comprehensive protocol for proper disposal of pharmaceutical waste, ensuring environmental safety and regulatory compliance.",
-    tags: ["Sustainability", "Compliance", "Protocols"],
-    image: "bg-gradient-to-br from-green-500 to-green-700"
-  },
-  {
-    title: "Antibiotic Stewardship Program",
-    category: "Clinical",
-    description: "Participated in developing hospital antibiotic stewardship initiatives to promote appropriate use of antimicrobials, reduce resistance, and improve patient outcomes.",
-    tags: ["Antimicrobial", "Stewardship", "Clinical Guidelines"],
-    image: "bg-gradient-to-br from-red-500 to-red-700"
+    title: "Literature Review: Phlebotomics",
+    category: "Academic Research",
+    description: "Conducted a comprehensive literature review examining the role of phlebotomics in varicose vein management, analyzing clinical trials and therapeutic outcomes.",
+    tags: ["Literature Research", "Critical Analysis", "Synthesis"],
+    image: "bg-gradient-to-br from-teal-500 to-teal-700",
+    icon: Microscope
   }
 ];
 

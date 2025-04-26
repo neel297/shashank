@@ -40,40 +40,42 @@ const Projects = () => {
           </AnimatedElement>
         </div>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((project, index) => (
-            <AnimatedElement key={project.title} delay={index * 100}>
-              <Card className="h-full overflow-hidden group hover-card">
-                <div className="relative h-48">
-                  <div className={`absolute inset-0 ${project.image}`}></div>
-                  <div className="absolute inset-0 flex items-center justify-center p-6">
-                    <span className="bg-white/10 backdrop-blur-sm text-white text-xs uppercase tracking-wider font-semibold px-3 py-1 rounded-full">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-3 group-hover:text-pharma-600 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">
-                        {tag}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {projects.map((project, index) => (
+              <AnimatedElement key={project.title} delay={index * 100}>
+                <Card className="h-full overflow-hidden group hover-card">
+                  <div className="relative h-48">
+                    <div className={`absolute inset-0 ${project.image}`}></div>
+                    <div className="absolute inset-0 flex items-center justify-center p-6">
+                      <span className="bg-white/10 backdrop-blur-sm text-white text-xs uppercase tracking-wider font-semibold px-3 py-1 rounded-full">
+                        {project.category}
                       </span>
-                    ))}
+                    </div>
                   </div>
-                  <div className="mt-auto pt-2">
-                    <Button variant="ghost" size="sm" className="text-pharma-600 hover:text-pharma-700 p-0 group">
-                      <span>View Details</span>
-                      <ExternalLink size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </AnimatedElement>
-          ))}
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-playfair font-semibold mb-3 group-hover:text-pharma-600 transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map(tag => (
+                        <span key={tag} className="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-auto pt-2">
+                      <Button variant="ghost" size="sm" className="text-pharma-600 hover:text-pharma-700 p-0 group">
+                        <span>View Details</span>
+                        <ExternalLink size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AnimatedElement>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "../ui/card";
 import AnimatedElement from "../ui/AnimatedElement";
-import { FlaskConical, Heart, Stethoscope, Users, BookOpen, Microscope, Prescription, Computer, MessageCircle } from "lucide-react";
+import { FlaskConical, Heart, Stethoscope, Users, BookOpen, Microscope, FileText, Computer, MessageCircle } from "lucide-react";
 
 const strengths = [
   {
@@ -25,7 +25,7 @@ const strengths = [
   {
     title: "Prescription Processing",
     description: "Skilled in accurately processing and filling prescriptions while ensuring compliance with pharmacy protocols and safety standards.",
-    icon: Prescription,
+    icon: FileText,
     color: "bg-amber-50 text-amber-700 border-amber-200",
   },
   {

@@ -3,21 +3,22 @@ import { useEffect, useState, useRef } from "react";
 import AnimatedElement from "../ui/AnimatedElement";
 
 const technicalSkills = [
-  { name: "Medication Management", level: 95 },
-  { name: "Drug Information Services", level: 90 },
-  { name: "Pharmaceutical Compounding", level: 85 },
-  { name: "Clinical Pharmacology", level: 88 },
-  { name: "Pharmacovigilance", level: 80 },
-  { name: "Pharmacy Informatics", level: 75 }
+  { name: "Pharmaceutical Knowledge", level: 95 },
+  { name: "GMP Principles", level: 90 },
+  { name: "Medication Reconciliation", level: 88 },
+  { name: "Compounding", level: 85 },
+  { name: "Laboratory Practices", level: 82 },
+  { name: "Microsoft Office", level: 80 },
+  { name: "Power BI", level: 75 }
 ];
 
 const softSkills = [
-  { name: "Patient Counseling", level: 92 },
-  { name: "Healthcare Team Collaboration", level: 88 },
-  { name: "Communication", level: 90 },
-  { name: "Problem Solving", level: 85 },
-  { name: "Attention to Detail", level: 95 },
-  { name: "Leadership", level: 80 }
+  { name: "Analytical Thinking", level: 92 },
+  { name: "Time Management", level: 88 },
+  { name: "Teamwork", level: 90 },
+  { name: "Communication", level: 95 },
+  { name: "Adaptability", level: 87 },
+  { name: "Problem-Solving", level: 85 }
 ];
 
 const Skills = () => {
@@ -64,18 +65,14 @@ const Skills = () => {
         
         <AnimatedElement delay={300}>
           <div className="mt-16 pt-8 border-t border-gray-200">
-            <h3 className="text-2xl font-playfair font-semibold mb-6 text-center">Additional Skills & Tools</h3>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "Pharmaceutical Research", "Drug Formulary Management", "Patient Education", 
-                "Healthcare Regulations", "Inventory Control", "Medical Equipment",
-                "EMR Systems", "Pharmacy Software", "Dispensing Systems", "Medication Therapy Management",
-                "Sterile Compounding", "Quality Assurance", "Clinical Trials Support"
-              ].map((tag, index) => (
-                <div key={tag} className="skill-tag group" style={{ transitionDelay: `${index * 50}ms` }}>
-                  {tag}
-                </div>
-              ))}
+            <h3 className="text-2xl font-playfair font-semibold mb-6 text-center">Languages</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="skill-tag group px-6 py-3">
+                <span className="font-semibold">English:</span> Fluent
+              </div>
+              <div className="skill-tag group px-6 py-3">
+                <span className="font-semibold">Hindi:</span> Native
+              </div>
             </div>
           </div>
         </AnimatedElement>

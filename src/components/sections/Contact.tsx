@@ -2,7 +2,7 @@
 import { useState, FormEvent } from "react";
 import Button from "../ui/Button";
 import AnimatedElement from "../ui/AnimatedElement";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -181,12 +181,11 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <Phone className="w-6 h-6 text-pharma-400 mt-1 mr-4" />
                     <div>
-                      <h4 className="font-medium text-white mb-1">Phone Number</h4>
-                      <a href="tel:+91XXXXXXXXXX" className="text-gray-300 hover:text-pharma-400 transition-colors">
-                        +91 XXXX XXX XXX
-                      </a>
+                      <h4 className="font-medium text-white mb-1">Location</h4>
+                      <p className="text-gray-300">
+                        Maihar, Madhya Pradesh, India
+                      </p>
                     </div>
                   </div>
                 </div>

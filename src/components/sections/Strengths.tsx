@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "../ui/card";
 import AnimatedElement from "../ui/AnimatedElement";
-import { FlaskConical, Heart, Stethoscope, Users, BookOpen, Microscope } from "lucide-react";
+import { FlaskConical, Heart, Stethoscope, Users, BookOpen, Microscope, Prescription, Computer, MessageCircle } from "lucide-react";
 
 const strengths = [
   {
@@ -23,21 +23,21 @@ const strengths = [
     color: "bg-teal-50 text-teal-700 border-teal-200",
   },
   {
-    title: "Team Leadership",
-    description: "Skilled in coordinating pharmacy teams to ensure efficient operations and quality service delivery.",
-    icon: Users,
+    title: "Prescription Processing",
+    description: "Skilled in accurately processing and filling prescriptions while ensuring compliance with pharmacy protocols and safety standards.",
+    icon: Prescription,
     color: "bg-amber-50 text-amber-700 border-amber-200",
   },
   {
-    title: "Continuous Learning",
-    description: "Committed to staying current with pharmaceutical advancements and healthcare innovations.",
-    icon: BookOpen,
+    title: "Patient Counseling",
+    description: "Strong communication skills for effective patient education on medication use, side effects, and adherence.",
+    icon: MessageCircle,
     color: "bg-indigo-50 text-indigo-700 border-indigo-200",
   },
   {
-    title: "Analytical Thinking",
-    description: "Strong problem-solving abilities applied to pharmaceutical challenges and healthcare optimization.",
-    icon: Microscope,
+    title: "Computer Literacy",
+    description: "Proficient in using pharmacy software, electronic health records, and other digital tools essential for modern pharmaceutical practice.",
+    icon: Computer,
     color: "bg-purple-50 text-purple-700 border-purple-200",
   },
 ];

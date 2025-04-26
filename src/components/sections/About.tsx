@@ -1,3 +1,4 @@
+
 import AnimatedElement from "../ui/AnimatedElement";
 
 const About = () => {
@@ -27,30 +28,6 @@ const About = () => {
               <p className="text-gray-700">
                 I am particularly interested in clinical pharmacy, medication therapy management, and pharmaceutical research. My goal is to contribute to healthcare improvement through effective medication management and patient education, ultimately enhancing therapeutic outcomes and patient satisfaction.
               </p>
-            </div>
-          </AnimatedElement>
-          
-          <AnimatedElement animation="fade-left" delay={200}>
-            <div className="space-y-6">
-              <h3 className="text-2xl font-playfair font-semibold text-gray-900 mb-4">Key Strengths</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium text-pharma-700 mb-2">Prescription Processing</h4>
-                  <p className="text-gray-700">Skilled in accurately processing and filling prescriptions while ensuring compliance with pharmacy protocols and safety standards.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-pharma-700 mb-2">Patient Counseling</h4>
-                  <p className="text-gray-700">Strong communication skills for effective patient education on medication use, side effects, and adherence.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-pharma-700 mb-2">Computer Literacy</h4>
-                  <p className="text-gray-700">Proficient in using pharmacy software, electronic health records, and other digital tools essential for modern pharmaceutical practice.</p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-pharma-700 mb-2">Quick Learning Ability</h4>
-                  <p className="text-gray-700">Adaptable and fast learner who efficiently acquires new skills and knowledge related to pharmaceutical protocols and developing technologies.</p>
-                </div>
-              </div>
             </div>
           </AnimatedElement>
         </div>

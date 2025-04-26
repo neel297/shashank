@@ -1,3 +1,4 @@
+
 import AnimatedElement from "../ui/AnimatedElement";
 import { Calendar, GraduationCap } from "lucide-react";
 
@@ -8,12 +9,7 @@ const education = [
     location: "Satna",
     period: "2021 - 2025",
     description: "Comprehensive study of pharmaceutical sciences, including pharmacology, medicinal chemistry, pharmaceutics, and clinical pharmacy. Currently pursuing with focus on developing expertise in medication management and patient care.",
-    achievements: [
-      "Focus on pharmaceutical sciences and patient care",
-      "Developing expertise in medication management",
-      "Studying clinical pharmacy practices",
-      "Learning advanced pharmacology concepts"
-    ]
+    achievements: []
   },
   {
     degree: "Secondary School Certificate (12th Grade)",
@@ -21,11 +17,7 @@ const education = [
     location: "Maihar",
     period: "Completed 2021",
     description: "Completed higher secondary education with a specialization in Biology, which developed my interest and provided the essential foundation for pursuing pharmaceutical studies.",
-    achievements: [
-      "Specialized in Biology",
-      "Built foundation for pharmaceutical studies",
-      "Developed interest in healthcare sciences"
-    ]
+    achievements: []
   },
   {
     degree: "Professional Development",
@@ -75,17 +67,19 @@ const Education = () => {
                       {item.institution}, {item.location}
                     </p>
                     <p className="text-gray-600 mb-4">{item.description}</p>
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Achievements:</h4>
-                      <ul className="space-y-1 text-gray-600">
-                        {item.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start">
-                            <span className="text-pharma-500 mr-2">•</span>
-                            <span>{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {item.achievements.length > 0 && (
+                      <div>
+                        <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Achievements:</h4>
+                        <ul className="space-y-1 text-gray-600">
+                          {item.achievements.map((achievement, i) => (
+                            <li key={i} className="flex items-start">
+                              <span className="text-pharma-500 mr-2">•</span>
+                              <span>{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </AnimatedElement>

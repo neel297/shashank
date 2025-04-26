@@ -1,13 +1,13 @@
 
-import { Card, CardContent } from "../ui/Card";
+import { Card, CardContent } from "../ui/card";
 import AnimatedElement from "../ui/AnimatedElement";
-import { Flask, Heart, Stethoscope, Users, BookOpen, Microscope } from "lucide-react";
+import { Beaker, Heart, Stethoscope, Users, BookOpen, Microscope } from "lucide-react";
 
 const strengths = [
   {
     title: "Pharmaceutical Knowledge",
     description: "Deep understanding of pharmaceutical sciences, medication management, and healthcare protocols.",
-    icon: Flask,
+    icon: Beaker,
     color: "bg-pharma-50 text-pharma-700 border-pharma-200",
   },
   {

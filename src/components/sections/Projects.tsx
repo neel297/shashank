@@ -1,5 +1,5 @@
 
-import { Card, CardContent } from "../ui/Card";
+import { Card, CardContent } from "../ui/card";
 import Button from "../ui/Button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { ExternalLink } from "lucide-react";

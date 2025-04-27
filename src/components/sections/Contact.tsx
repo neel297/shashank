@@ -1,5 +1,5 @@
 import { useState, FormEvent } from "react";
-import Button from "../ui/button";
+import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { Mail, Linkedin, Instagram, MapPin } from "lucide-react";
 
@@ -75,8 +75,8 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white relative overflow-hidden">
       {/* Decorative elements with dark theme */}
-      <div className="floating-decoration top-20 left-20 w-72 h-72 rounded-full bg-pharma-900/30 mix-blend-soft-light filter blur-xl"></div>
-      <div className="floating-decoration bottom-40 right-30 w-80 h-80 rounded-full bg-teal-900/30 mix-blend-soft-light filter blur-xl" style={{ animationDelay: "3s" }}></div>
+      <div className="floating-decoration top-20 left-20 w-72 h-72 rounded-full bg-pharma-900/30 mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
+      <div className="floating-decoration bottom-40 right-30 w-80 h-80 rounded-full bg-teal-900/30 mix-blend-soft-light filter blur-3xl opacity-70" style={{ animationDelay: "2s" }}></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">

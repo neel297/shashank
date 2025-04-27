@@ -1,4 +1,3 @@
-
 import Button from "../ui/Button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { ChevronDown, Send } from "lucide-react";
@@ -64,18 +63,12 @@ const Hero = () => {
           <AnimatedElement animation="fade-left" delay={300}>
             <div className="relative">
               <div className="w-full h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-xl relative">
-                {/* Add profile image here */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pharma-600/90 to-teal-500/90 opacity-90"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Placeholder for profile image */}
-                  <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-4xl font-playfair">
-                    SP
-                  </div>
-                </div>
-                
-                {/* Decorative elements */}
-                <div className="absolute bottom-6 left-6 w-20 h-20 rounded-lg border-4 border-white/20 backdrop-blur-sm"></div>
-                <div className="absolute top-6 right-6 w-20 h-20 rounded-full border-4 border-white/20 backdrop-blur-sm"></div>
+                <img 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr2h3tSEl6i8hWYbGuaFP3O0QcwnySafS5Go7kDF3pi327nFK2p13DHci4RmAsMyZqU25PMsaMrpjGYF-2S4p8jGcO7XzVxn6gNp_fATgk9iZXtfmh4mOBahCQ_G6CmMIsdLu9JmoZFW-czRHE_cXstcoyM770nYiOQOoQvY5TKiJPvnq2AqnwtqqM3IpX/s640/me.jpg" 
+                  alt="Shashank Mohan Pandey" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-pharma-600/90 to-teal-500/90 opacity-30"></div>
               </div>
             </div>
           </AnimatedElement>

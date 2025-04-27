@@ -1,4 +1,5 @@
-import Button from "../ui/Button";
+
+import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { ChevronDown, Send } from "lucide-react";
 
@@ -44,7 +45,7 @@ const Hero = () => {
                 <Button 
                   size="lg"
                   onClick={scrollToContact}
-                  className="group"
+                  className="group bg-gradient-to-r from-pharma-600 to-teal-500 text-white hover:-translate-y-1"
                 >
                   Contact Me
                   <Send className="ml-2 transition-transform group-hover:translate-x-1" />
@@ -53,6 +54,7 @@ const Hero = () => {
                   variant="outline"
                   size="lg" 
                   onClick={scrollToProjects}
+                  className="border-2 border-pharma-500 text-pharma-700 hover:bg-pharma-50 hover:-translate-y-1"
                 >
                   View Projects
                 </Button>

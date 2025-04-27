@@ -1,3 +1,4 @@
+
 import { useState, FormEvent } from "react";
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
@@ -154,7 +155,7 @@ const Contact = () => {
                 <div>
                   <Button 
                     type="submit" 
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto bg-gradient-to-r from-pharma-600 to-teal-500 text-white"
                     size="lg"
                   >
                     Send Message

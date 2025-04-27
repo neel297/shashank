@@ -173,8 +173,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Add global styles for the animation */}
-      <style jsx global>{`
+      {/* Fix the style tag */}
+      <style>{`
         @keyframes slideInRight {
           from {
             opacity: 0;

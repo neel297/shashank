@@ -1,8 +1,7 @@
-
 import { useState, FormEvent } from "react";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Instagram, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -181,6 +180,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start">
+                    <MapPin className="w-6 h-6 text-pharma-400 mt-1 mr-4" />
                     <div>
                       <h4 className="font-medium text-white mb-1">Location</h4>
                       <p className="text-gray-300">
@@ -195,7 +195,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-playfair font-semibold mb-6">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://linkedin.com/" 
+                    href="https://in.linkedin.com/in/shashank-mohan-pandey-5183b0312" 
                     target="_blank"
                     rel="noreferrer"
                     className="bg-gray-700 hover:bg-pharma-600 transition-colors p-4 rounded-full"
@@ -204,13 +204,13 @@ const Contact = () => {
                     <Linkedin className="w-6 h-6" />
                   </a>
                   <a 
-                    href="https://github.com/" 
+                    href="https://www.instagram.com/mm_shashank?igsh=MWEyY3cwYng0NGU1cw==" 
                     target="_blank"
                     rel="noreferrer"
                     className="bg-gray-700 hover:bg-pharma-600 transition-colors p-4 rounded-full"
-                    aria-label="GitHub Profile"
+                    aria-label="Instagram Profile"
                   >
-                    <Github className="w-6 h-6" />
+                    <Instagram className="w-6 h-6" />
                   </a>
                 </div>
               </div>

@@ -1,5 +1,4 @@
-
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://linkedin.com/" 
+                href="https://in.linkedin.com/in/shashank-mohan-pandey-5183b0312" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-gray-300 hover:text-pharma-400 transition-colors"
@@ -22,13 +21,13 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://github.com/" 
+                href="https://www.instagram.com/mm_shashank?igsh=MWEyY3cwYng0NGU1cw==" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-gray-300 hover:text-pharma-400 transition-colors"
-                aria-label="GitHub"
+                aria-label="Instagram"
               >
-                <Github size={20} />
+                <Instagram size={20} />
               </a>
               <a 
                 href="mailto:shashankmohanp@gmail.com" 
@@ -36,13 +35,6 @@ const Footer = () => {
                 aria-label="Email"
               >
                 <Mail size={20} />
-              </a>
-              <a 
-                href="tel:+91XXXXXXXXXX" 
-                className="text-gray-300 hover:text-pharma-400 transition-colors"
-                aria-label="Phone"
-              >
-                <Phone size={20} />
               </a>
             </div>
           </div>
@@ -68,10 +60,6 @@ const Footer = () => {
             <p className="text-gray-300 mb-2">
               <Mail size={16} className="inline mr-2" />
               shashankmohanp@gmail.com
-            </p>
-            <p className="text-gray-300">
-              <Phone size={16} className="inline mr-2" />
-              +91 XXXXXXXXXX
             </p>
           </div>
         </div>

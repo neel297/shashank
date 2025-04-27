@@ -1,5 +1,6 @@
+
 import { Card, CardContent } from "../ui/card";
-import Button from "../ui/Button";
+import { Button } from "../ui/button";  // Changed from 'import Button from' to 'import { Button } from'
 import AnimatedElement from "../ui/AnimatedElement";
 import { ExternalLink, BookOpen, Microscope } from "lucide-react";
 

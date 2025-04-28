@@ -1,4 +1,3 @@
-
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { ChevronDown, Send } from "lucide-react";
@@ -64,7 +63,7 @@ const Hero = () => {
 
           <AnimatedElement animation="fade-left" delay={300}>
             <div className="relative">
-              <div className="w-full h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-xl relative">
+              <div className="w-full h-80 md:h-[450px] rounded-2xl overflow-hidden shadow-xl relative">
                 <img 
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr2h3tSEl6i8hWYbGuaFP3O0QcwnySafS5Go7kDF3pi327nFK2p13DHci4RmAsMyZqU25PMsaMrpjGYF-2S4p8jGcO7XzVxn6gNp_fATgk9iZXtfmh4mOBahCQ_G6CmMIsdLu9JmoZFW-czRHE_cXstcoyM770nYiOQOoQvY5TKiJPvnq2AqnwtqqM3IpX/s640/me.jpg" 
                   alt="Shashank Mohan Pandey" 

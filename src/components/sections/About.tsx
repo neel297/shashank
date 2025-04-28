@@ -1,6 +1,5 @@
+
 import AnimatedElement from "../ui/AnimatedElement";
-import { Button } from "../ui/button";
-import { ExternalLink } from "lucide-react";
 
 const About = () => {
   return (
@@ -28,16 +27,6 @@ const About = () => {
             <p className="text-gray-700">
               I am particularly interested in clinical pharmacy, medication therapy management, and pharmaceutical research. My goal is to contribute to healthcare improvement through effective medication management and patient education, ultimately enhancing therapeutic outcomes and patient satisfaction.
             </p>
-            
-            <div className="mt-8">
-              <Button 
-                className="group bg-gradient-to-r from-pharma-600 to-teal-500 text-white hover:-translate-y-1"
-                onClick={() => window.open('https://shashankmohanpandey.blogspot.com/', '_blank')}
-              >
-                View More
-                <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-            </div>
           </div>
         </AnimatedElement>
       </div>

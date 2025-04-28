@@ -1,3 +1,4 @@
+
 import { useState, FormEvent } from "react";
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
@@ -89,7 +90,7 @@ const Contact = () => {
           </AnimatedElement>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <AnimatedElement animation="fade-right">
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-xl">
               <h3 className="text-2xl font-playfair font-semibold mb-6">Send Me a Message</h3>
@@ -165,7 +166,7 @@ const Contact = () => {
           </AnimatedElement>
           
           <AnimatedElement animation="fade-left" delay={200}>
-            <div className="flex flex-col gap-8 mx-auto w-full max-w-md">
+            <div className="flex flex-col gap-8">
               <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-xl">
                 <h3 className="text-2xl font-playfair font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-4">

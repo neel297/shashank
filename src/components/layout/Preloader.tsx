@@ -31,7 +31,7 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-gradient mb-8">
           Shashank Pandey
         </h1>
-        <div className="loading">
+        <div className="loading animate-pulse flex justify-center">
           <svg width="64px" height="48px">
             <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
             <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
@@ -41,6 +41,13 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
 
       <style>
         {`
+          .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+          
           .loading svg polyline {
             fill: none;
             stroke-width: 3;

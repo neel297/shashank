@@ -1,12 +1,20 @@
 
 import { useEffect, useState } from 'react';
+import { useIsMobile } from './use-mobile';
 
 export const useCustomCursor = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [isHovering, setIsHovering] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
+    // Early return if on mobile
+    if (isMobile) {
+      setIsHidden(true);
+      return;
+    }
+
     // Check if device has hover capability (not mobile/touch)
     const hasHoverSupport = window.matchMedia('(hover: hover)').matches;
     if (!hasHoverSupport) {
@@ -56,7 +64,7 @@ export const useCustomCursor = () => {
         element.removeEventListener('mouseleave', () => setIsHovering(false));
       });
     };
-  }, []);
+  }, [isMobile]);
 
   return { position, isHovering, isHidden };
 };

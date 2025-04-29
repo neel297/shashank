@@ -63,12 +63,12 @@ const Hero = () => {
           </AnimatedElement>
 
           <AnimatedElement animation="fade-left" delay={300}>
-            <div className="relative">
-              <div className="w-full h-96 md:h-[450px] lg:h-[420px] rounded-2xl overflow-hidden shadow-xl relative">
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-xl relative">
                 <img 
                   src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr2h3tSEl6i8hWYbGuaFP3O0QcwnySafS5Go7kDF3pi327nFK2p13DHci4RmAsMyZqU25PMsaMrpjGYF-2S4p8jGcO7XzVxn6gNp_fATgk9iZXtfmh4mOBahCQ_G6CmMIsdLu9JmoZFW-czRHE_cXstcoyM770nYiOQOoQvY5TKiJPvnq2AqnwtqqM3IpX/s640/me.jpg" 
                   alt="Shashank Mohan Pandey" 
-                  className="absolute inset-0 w-full h-full object-contain md:object-cover lg:object-contain"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-pharma-600/90 to-teal-500/90 opacity-30"></div>
               </div>

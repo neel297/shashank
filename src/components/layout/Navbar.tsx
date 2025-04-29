@@ -92,25 +92,25 @@ const Navbar = () => {
           {/* Mobile Navigation using shadcn Sheet component */}
           <div className="lg:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger asChild onClick={(e) => e.stopPropagation()}>
+              <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className="text-gray-800 focus:outline-none focus:ring-0 p-0"
+                  className="text-gray-800 focus:outline-none focus:ring-0 p-0 w-12 h-12 flex items-center justify-center"
                   aria-label="Open menu"
                 >
-                  <label className="hamburger" onClick={(e) => e.stopPropagation()}>
+                  <div className="hamburger w-full h-full flex items-center justify-center">
                     <input 
                       type="checkbox" 
                       checked={open} 
-                      onChange={() => {}} 
-                      onClick={(e) => e.stopPropagation()}
+                      onChange={() => setOpen(!open)} 
+                      className="absolute w-12 h-12 opacity-0 cursor-pointer z-50"
                     />
-                    <svg viewBox="0 0 32 32">
+                    <svg viewBox="0 0 32 32" className="w-7 h-7">
                       <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
                       <path className="line" d="M7 16 27 16"></path>
                     </svg>
-                  </label>
+                  </div>
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full max-w-xs p-0 bg-white/95 backdrop-blur-lg">
@@ -178,10 +178,17 @@ const Navbar = () => {
         {`
         .hamburger {
           cursor: pointer;
+          position: relative;
         }
         
         .hamburger input {
-          display: none;
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          cursor: pointer;
         }
         
         .hamburger svg {

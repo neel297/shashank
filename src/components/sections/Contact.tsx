@@ -3,8 +3,11 @@ import { useState, FormEvent } from "react";
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
 import { Mail, Linkedin, Instagram, MapPin } from "lucide-react";
+import emailjs from "emailjs-com";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,6 +18,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -55,21 +59,51 @@ const Contact = () => {
     return valid;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
-      const subject = `Contact from Portfolio - ${formData.name}`;
-      const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+      setIsSubmitting(true);
       
-      window.location.href = `mailto:shashankmohanp@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-      
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
+      try {
+        // Prepare template parameters for EmailJS
+        const templateParams = {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message
+        };
+        
+        // Send email using EmailJS
+        await emailjs.send(
+          "service_6jagasq",  // Your Service ID
+          "template_695zy2y", // Your Template ID
+          templateParams,
+          "sMdNUjN0b4MI4Sflj" // Your Public Key
+        );
+        
+        // Show success message
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+          variant: "default",
+        });
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } catch (error) {
+        console.error("Error sending email:", error);
+        toast({
+          title: "Failed to send message",
+          description: "There was an error sending your message. Please try again later.",
+          variant: "destructive",
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -157,8 +191,9 @@ const Contact = () => {
                     type="submit" 
                     className="w-full sm:w-auto bg-gradient-to-r from-pharma-600 to-teal-500 text-white"
                     size="lg"
+                    disabled={isSubmitting}
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </div>
               </form>

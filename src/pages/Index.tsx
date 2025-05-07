@@ -8,6 +8,7 @@ import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import { useEffect } from "react";
+import emailjs from "emailjs-com";
 
 const Index = () => {
   useEffect(() => {
@@ -21,6 +22,9 @@ const Index = () => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', 'Professional portfolio of Shashank Mohan Pandey, B.Pharmacy graduate with expertise in pharmaceutical sciences, patient care, and healthcare innovation.');
+    
+    // Initialize EmailJS
+    emailjs.init("sMdNUjN0b4MI4Sflj");
     
     // Smooth scroll for Safari
     document.documentElement.style.scrollBehavior = "smooth";

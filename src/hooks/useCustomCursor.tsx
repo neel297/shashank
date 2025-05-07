@@ -6,6 +6,7 @@ export const useCustomCursor = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [isHovering, setIsHovering] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const [isOnFormInput, setIsOnFormInput] = useState(false);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -42,6 +43,15 @@ export const useCustomCursor = () => {
         element.addEventListener('mouseenter', () => setIsHovering(true));
         element.addEventListener('mouseleave', () => setIsHovering(false));
       });
+      
+      // Track form input field interactions
+      const formInputs = document.querySelectorAll('input, textarea');
+      formInputs.forEach(input => {
+        input.addEventListener('mouseenter', () => setIsOnFormInput(true));
+        input.addEventListener('mouseleave', () => setIsOnFormInput(false));
+        input.addEventListener('focus', () => setIsOnFormInput(true));
+        input.addEventListener('blur', () => setIsOnFormInput(false));
+      });
     };
 
     window.addEventListener('mousemove', onMouseMove);
@@ -63,8 +73,16 @@ export const useCustomCursor = () => {
         element.removeEventListener('mouseenter', () => setIsHovering(true));
         element.removeEventListener('mouseleave', () => setIsHovering(false));
       });
+      
+      const formInputs = document.querySelectorAll('input, textarea');
+      formInputs.forEach(input => {
+        input.removeEventListener('mouseenter', () => setIsOnFormInput(true));
+        input.removeEventListener('mouseleave', () => setIsOnFormInput(false));
+        input.removeEventListener('focus', () => setIsOnFormInput(true));
+        input.removeEventListener('blur', () => setIsOnFormInput(false));
+      });
     };
   }, [isMobile]);
 
-  return { position, isHovering, isHidden };
+  return { position, isHovering, isHidden: isHidden || isOnFormInput };
 };

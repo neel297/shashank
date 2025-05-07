@@ -1,4 +1,3 @@
-
 import { useState, FormEvent } from "react";
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
@@ -66,10 +65,10 @@ const Contact = () => {
       setIsSubmitting(true);
       
       try {
-        // Prepare template parameters for EmailJS
+        // Prepare template parameters for EmailJS with variable names that match your template
         const templateParams = {
-          from_name: formData.name,
-          from_email: formData.email,
+          user_name: formData.name,
+          user_email: formData.email,
           message: formData.message
         };
         

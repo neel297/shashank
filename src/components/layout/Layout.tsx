@@ -32,7 +32,7 @@ const Layout = ({ children }: LayoutProps) => {
       <ScrollProgressBar />
       <Navbar />
       <SideNavDots />
-      <main className="min-h-screen">
+      <main className="min-h-screen relative z-10">
         {children}
       </main>
       <Footer />

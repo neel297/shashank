@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 // Component to generate the DNA background animation
@@ -19,6 +20,7 @@ const DnaBackgroundAnimation = () => {
   const strandColor = "#76ABAE"; // A muted, sophisticated teal for the DNA strands
   const rungColor = "#A6C5C7";   // A lighter, complementary shade for the rungs
   const pageBackgroundColor = "#F0F4F8"; // A very light, neutral background (e.g., off-white or pale cool gray)
+  const overlayColor = "rgba(240, 244, 248, 0.85)"; // Semi-transparent overlay that matches the background color
 
   // --- Generate points for the DNA strands ---
   // These arrays will store the (x, y) coordinates for drawing the two helix strands.
@@ -94,6 +96,7 @@ const DnaBackgroundAnimation = () => {
       <svg 
         width="100%" 
         height="100%" 
+        style={{ opacity: 0.6 }} // Reduced opacity for better text readability
       >
         <defs>
           <pattern
@@ -118,6 +121,19 @@ const DnaBackgroundAnimation = () => {
         </defs>
         <rect width="100%" height="100%" fill={`url(#${PATTERN_ID})`} />
       </svg>
+      
+      {/* Semi-transparent overlay to improve text readability */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: overlayColor,
+          zIndex: 1,
+        }}
+      />
     </div>
   );
 };

@@ -6,6 +6,7 @@ import SideNavDots from "./SideNavDots";
 import ScrollProgressBar from "./ScrollProgressBar";
 import CustomCursor from "./CustomCursor";
 import Preloader from "./Preloader";
+import DnaBackgroundAnimation from "./DnaBackgroundAnimation";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -26,6 +27,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Preloader isLoading={isLoading} />
+      <DnaBackgroundAnimation />
       <CustomCursor />
       <ScrollProgressBar />
       <Navbar />

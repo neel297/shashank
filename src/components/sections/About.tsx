@@ -18,13 +18,13 @@ const About = () => {
         
         <AnimatedElement animation="fade-right">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               I am Shashank Mohan Pandey, a dedicated and passionate Pharmacist with a B.Pharmacy degree. Throughout my career, I have developed expertise in pharmaceutical care, medication management, and patient counseling. My professional journey has been centered around improving patient outcomes and enhancing medication safety practices.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               With a strong foundation in pharmaceutical sciences and a commitment to continuous learning, I strive to stay updated with the latest advancements in pharmacotherapy. My approach combines scientific knowledge with empathetic patient care to deliver comprehensive pharmaceutical services.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               I am particularly interested in clinical pharmacy, medication therapy management, and pharmaceutical research. My goal is to contribute to healthcare improvement through effective medication management and patient education, ultimately enhancing therapeutic outcomes and patient satisfaction.
             </p>
           </div>

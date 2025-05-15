@@ -79,7 +79,7 @@ const Hero = () => {
             {/* Profile image with smoky bottom effect */}
             <div className="relative h-full">
               <img 
-                src="https://ibb.co/5WDCWqNz" 
+                src="https://i.ibb.co/5WDCWqN/profile-photo.png" 
                 alt="Shashank Mohan Pandey" 
                 className="w-full h-full object-contain relative z-10"
               />

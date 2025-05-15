@@ -63,7 +63,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" className="text-xl md:text-2xl font-playfair font-bold text-pharma-800 relative z-50">
+          <a href="#home" className="text-xl md:text-2xl font-playfair font-bold text-black relative z-50">
             Shashank <span className="text-gradient">Pandey</span>
           </a>
 
@@ -78,8 +78,8 @@ const Navbar = () => {
                       e.preventDefault();
                       scrollToSection(link.href);
                     }}
-                    className={`text-gray-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-pharma-500 after:transition-all after:duration-300 ${
-                      activeSection === link.href.substring(1) ? "after:w-full text-pharma-600 font-medium" : ""
+                    className={`font-poppins text-gray-800 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-black after:transition-all after:duration-300 ${
+                      activeSection === link.href.substring(1) ? "after:w-full text-black font-medium" : ""
                     }`}
                   >
                     {link.name}
@@ -116,7 +116,7 @@ const Navbar = () => {
               <SheetContent side="right" className="w-full max-w-xs p-0 bg-white/95 backdrop-blur-lg">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between border-b p-4">
-                    <a href="#home" className="text-xl font-playfair font-bold text-pharma-800">
+                    <a href="#home" className="text-xl font-playfair font-bold text-black">
                       Shashank <span className="text-gradient">Pandey</span>
                     </a>
                   </div>
@@ -138,15 +138,15 @@ const Navbar = () => {
                               e.preventDefault();
                               scrollToSection(link.href);
                             }}
-                            className={`text-xl font-medium block relative overflow-hidden group py-2 ${
-                              activeSection === link.href.substring(1) ? "text-pharma-600" : "text-gray-800"
+                            className={`font-poppins text-xl font-medium block relative overflow-hidden group py-2 ${
+                              activeSection === link.href.substring(1) ? "text-black" : "text-gray-800"
                             }`}
                           >
-                            <span className="relative z-10 group-hover:text-pharma-600 transition-colors">
+                            <span className="relative z-10 group-hover:text-black transition-colors">
                               {link.name}
                             </span>
                             <span 
-                              className={`absolute bottom-0 left-0 w-full h-[2px] bg-pharma-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                              className={`absolute bottom-0 left-0 w-full h-[2px] bg-black transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                                 activeSection === link.href.substring(1) ? "scale-x-100" : ""
                               }`}
                             />
@@ -162,9 +162,9 @@ const Navbar = () => {
                         e.preventDefault();
                         scrollToSection("#contact");
                       }}
-                      className="bg-gradient-to-r from-pharma-600 to-teal-500 hover:from-pharma-700 hover:to-teal-600 text-white font-medium px-6 py-3 rounded-lg w-full block text-center transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="bg-black hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-full w-full block text-center transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                      Contact Me
+                      Get in touch
                     </a>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const Navbar = () => {
         
         .line {
           fill: none;
-          stroke: #075985;
+          stroke: #000;
           stroke-linecap: round;
           stroke-linejoin: round;
           stroke-width: 3;

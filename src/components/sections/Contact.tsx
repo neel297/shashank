@@ -1,3 +1,4 @@
+
 import { useState, FormEvent } from "react";
 import { Button } from "../ui/button";
 import AnimatedElement from "../ui/AnimatedElement";
@@ -109,15 +110,15 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white relative overflow-hidden">
       {/* Decorative elements with dark theme */}
-      <div className="floating-decoration top-20 left-20 w-72 h-72 rounded-full bg-pharma-900/30 mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
-      <div className="floating-decoration bottom-40 right-30 w-80 h-80 rounded-full bg-teal-900/30 mix-blend-soft-light filter blur-3xl opacity-70" style={{ animationDelay: "2s" }}></div>
+      <div className="floating-decoration top-20 left-20 w-72 h-72 rounded-full bg-gray-800/30 mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
+      <div className="floating-decoration bottom-40 right-30 w-80 h-80 rounded-full bg-gray-800/30 mix-blend-soft-light filter blur-3xl opacity-70" style={{ animationDelay: "2s" }}></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <AnimatedElement>
             <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Get In Touch</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-pharma-400 to-teal-400 mx-auto mb-6"></div>
-            <p className="text-gray-300">
+            <div className="h-1 w-20 bg-white mx-auto mb-6"></div>
+            <p className="text-gray-300 font-poppins">
               Let's connect and discuss how we can work together or answer any questions you might have.
             </p>
           </AnimatedElement>
@@ -127,10 +128,10 @@ const Contact = () => {
           <AnimatedElement animation="fade-right">
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-xl">
               <h3 className="text-2xl font-playfair font-semibold mb-6">Send Me a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 font-poppins">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-                    Your Name <span className="text-pharma-400">*</span>
+                    Your Name <span className="text-white">*</span>
                   </label>
                   <input
                     type="text"
@@ -140,7 +141,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className={`w-full bg-gray-700/50 border ${
                       errors.name ? "border-red-500" : "border-gray-600"
-                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-pharma-500`}
+                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-white`}
                   />
                   {errors.name && (
                     <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -149,7 +150,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                    Your Email <span className="text-pharma-400">*</span>
+                    Your Email <span className="text-white">*</span>
                   </label>
                   <input
                     type="email"
@@ -159,7 +160,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className={`w-full bg-gray-700/50 border ${
                       errors.email ? "border-red-500" : "border-gray-600"
-                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-pharma-500`}
+                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-white`}
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -168,7 +169,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-                    Your Message <span className="text-pharma-400">*</span>
+                    Your Message <span className="text-white">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -178,7 +179,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className={`w-full bg-gray-700/50 border ${
                       errors.message ? "border-red-500" : "border-gray-600"
-                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-pharma-500`}
+                    } rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-white`}
                   ></textarea>
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -188,11 +189,11 @@ const Contact = () => {
                 <div>
                   <Button 
                     type="submit" 
-                    className="w-full sm:w-auto bg-gradient-to-r from-pharma-600 to-teal-500 text-white"
+                    className="w-full sm:w-auto bg-black hover:bg-gray-800 text-white rounded-full"
                     size="lg"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Sending..." : "Get in touch"}
                   </Button>
                 </div>
               </form>
@@ -203,19 +204,19 @@ const Contact = () => {
             <div className="flex flex-col gap-8">
               <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-xl">
                 <h3 className="text-2xl font-playfair font-semibold mb-6">Contact Information</h3>
-                <div className="space-y-4">
+                <div className="space-y-4 font-poppins">
                   <div className="flex items-start">
-                    <Mail className="w-6 h-6 text-pharma-400 mt-1 mr-4" />
+                    <Mail className="w-6 h-6 text-white mt-1 mr-4" />
                     <div>
                       <h4 className="font-medium text-white mb-1">Email Address</h4>
-                      <a href="mailto:shashankmohanp@gmail.com" className="text-gray-300 hover:text-pharma-400 transition-colors">
+                      <a href="mailto:shashankmohanp@gmail.com" className="text-gray-300 hover:text-white transition-colors">
                         shashankmohanp@gmail.com
                       </a>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <MapPin className="w-6 h-6 text-pharma-400 mt-1 mr-4" />
+                    <MapPin className="w-6 h-6 text-white mt-1 mr-4" />
                     <div>
                       <h4 className="font-medium text-white mb-1">Location</h4>
                       <p className="text-gray-300">
@@ -233,7 +234,7 @@ const Contact = () => {
                     href="https://in.linkedin.com/in/shashank-mohan-pandey-5183b0312" 
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-gray-700 hover:bg-pharma-600 transition-colors p-4 rounded-full"
+                    className="bg-gray-700 hover:bg-black transition-colors p-4 rounded-full"
                     aria-label="LinkedIn Profile"
                   >
                     <Linkedin className="w-6 h-6" />
@@ -242,7 +243,7 @@ const Contact = () => {
                     href="https://www.instagram.com/mm_shashank?igsh=MWEyY3cwYng0NGU1cw==" 
                     target="_blank"
                     rel="noreferrer"
-                    className="bg-gray-700 hover:bg-pharma-600 transition-colors p-4 rounded-full"
+                    className="bg-gray-700 hover:bg-black transition-colors p-4 rounded-full"
                     aria-label="Instagram Profile"
                   >
                     <Instagram className="w-6 h-6" />

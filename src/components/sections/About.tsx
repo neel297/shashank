@@ -5,19 +5,19 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="floating-decoration top-20 left-20 w-40 h-40 rounded-full bg-pharma-100 mix-blend-multiply filter blur-xl"></div>
-      <div className="floating-decoration bottom-20 right-40 w-60 h-60 rounded-full bg-teal-100 mix-blend-multiply filter blur-xl" style={{ animationDelay: "2s" }}></div>
+      <div className="floating-decoration top-20 left-20 w-40 h-40 rounded-full bg-gray-200 mix-blend-multiply filter blur-xl"></div>
+      <div className="floating-decoration bottom-20 right-40 w-60 h-60 rounded-full bg-gray-200 mix-blend-multiply filter blur-xl" style={{ animationDelay: "2s" }}></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <AnimatedElement>
             <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-4">About Me</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-pharma-500 to-teal-500 mx-auto"></div>
+            <div className="h-1 w-20 bg-black mx-auto"></div>
           </AnimatedElement>
         </div>
         
         <AnimatedElement animation="fade-right">
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto space-y-6 font-poppins">
             <p className="text-gray-700 leading-relaxed text-left">
               I am Shashank Mohan Pandey, a dedicated and passionate Pharmacist with a B.Pharmacy degree. Throughout my career, I have developed expertise in pharmaceutical care, medication management, and patient counseling. My professional journey has been centered around improving patient outcomes and enhancing medication safety practices.
             </p>

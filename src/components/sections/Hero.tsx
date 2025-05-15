@@ -66,7 +66,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="self-start bg-black text-white hover:bg-gray-800 rounded-full px-8"
             >
-              Book a Call
+              Get in touch
             </Button>
           </div>
         </AnimatedElement>
@@ -84,9 +84,9 @@ const Hero = () => {
                 className="w-full h-full object-contain relative z-10"
                 onLoad={() => setIsLoaded(true)}
               />
-              {/* Enhanced smoky gradient effect at the bottom of the image for smoother merging */}
+              {/* Reduced smoky gradient effect for smoother merging with less image coverage */}
               <div 
-                className="absolute bottom-0 left-0 right-0 h-[200px] bg-gradient-to-t from-white via-white/80 to-transparent z-20"
+                className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white via-white/80 to-transparent z-20"
                 aria-hidden="true"
               ></div>
             </div>

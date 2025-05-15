@@ -27,15 +27,24 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Preloader isLoading={isLoading} />
-      <DnaBackgroundAnimation />
-      <CustomCursor />
-      <ScrollProgressBar />
-      <Navbar />
-      <SideNavDots />
-      <main className="min-h-screen relative z-10">
-        {children}
-      </main>
-      <Footer />
+      <div className="relative">
+        {/* Background with reduced opacity */}
+        <div className="fixed inset-0 z-0">
+          <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10"></div>
+          <DnaBackgroundAnimation />
+        </div>
+        
+        <CustomCursor />
+        <ScrollProgressBar />
+        <Navbar />
+        <SideNavDots />
+        
+        <main className="min-h-screen relative z-10">
+          {children}
+        </main>
+        
+        <Footer />
+      </div>
     </>
   );
 };

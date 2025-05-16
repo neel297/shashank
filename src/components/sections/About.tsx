@@ -12,7 +12,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <AnimatedElement>
             <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-4">About Me</h2>
-            <div className="h-1 w-20 bg-black mx-auto"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-pharma-500 to-teal-500 mx-auto"></div>
           </AnimatedElement>
         </div>
         

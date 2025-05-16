@@ -23,12 +23,12 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
 
   return (
     <div
-      className={`fixed inset-0 flex items-center justify-center bg-white z-[100] transition-opacity duration-500 ${
+      className={`fixed inset-0 flex items-center justify-center bg-gray-900 z-[100] transition-opacity duration-500 ${
         isLoading ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
       <div className="text-center">
-        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-gradient mb-8">
+        <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-8">
           Shashank Pandey
         </h1>
         <div className="loading animate-pulse flex justify-center">
@@ -57,12 +57,12 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
 
           .loading svg polyline#back {
             fill: none;
-            stroke: #0ea4e933;
+            stroke: #ffffff33;
           }
 
           .loading svg polyline#front {
             fill: none;
-            stroke: #0ea4e9;
+            stroke: #ffffff;
             stroke-dasharray: 48, 144;
             stroke-dashoffset: 192;
             animation: dash_682 1.4s linear infinite;

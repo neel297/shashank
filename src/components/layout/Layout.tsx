@@ -27,7 +27,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Preloader isLoading={isLoading} />
-      <div className="relative">
+      <div className="relative min-h-screen flex flex-col">
         {/* Background with reduced opacity */}
         <div className="fixed inset-0 z-0">
           <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10"></div>
@@ -39,7 +39,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Navbar />
         <SideNavDots />
         
-        <main className="min-h-screen relative z-10">
+        <main className="flex-grow relative z-10">
           {children}
         </main>
         

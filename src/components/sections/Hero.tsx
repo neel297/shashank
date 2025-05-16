@@ -76,7 +76,7 @@ const Hero = () => {
           className={`relative lg:h-[80vh] flex items-center justify-center transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
         >
           <div className="relative w-full h-full">
-            {/* Profile image with enhanced smoky bottom effect */}
+            {/* Profile image with reduced smoky bottom effect */}
             <div className="relative h-full">
               <img 
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5KJ-gMu8kvcT__OaeVQzumdtrnYyF2Og9Q0U2FKn9dxCCJ22E_w5Hq8RBKDLEiP5StpX6GSSpIuz3-B73Rsk5p87Wrd7lArGOEF1iqnVcxfNJGU5LmVw70IzXw_w4Ykcb6ufdX4JJqbrR1j3dgZGUFkguZhmx5S-arjzHA7yUxE42H8YyBVdyECJZae3U/s800/Mauve%20Dark%20Professional%20Twitter%20Profile%20Picture_20250515_234455_0000.png" 
@@ -84,9 +84,9 @@ const Hero = () => {
                 className="w-full h-full object-contain relative z-10"
                 onLoad={() => setIsLoaded(true)}
               />
-              {/* Reduced smoky gradient effect for smoother merging with less image coverage */}
+              {/* Reduced smoky gradient effect - significantly shorter height */}
               <div 
-                className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white via-white/80 to-transparent z-20"
+                className="absolute bottom-0 left-0 right-0 h-[80px] bg-gradient-to-t from-white via-white/80 to-transparent z-20"
                 aria-hidden="true"
               ></div>
             </div>

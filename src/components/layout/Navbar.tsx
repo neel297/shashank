@@ -57,16 +57,11 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ease-out ${
+      className={`fixed top-0 left-0 w-full z-40 transition-all duration-700 ease-out ${
         isScrolled 
-          ? "py-2 backdrop-blur-xl bg-gradient-to-r from-white/70 via-white/80 to-white/70 shadow-lg border-b border-white/20" 
+          ? "py-2 fluid-glass shadow-2xl" 
           : "py-4 bg-transparent"
       }`}
-      style={isScrolled ? {
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.7) 100%)',
-        backdropFilter: 'blur(20px) saturate(180%)',
-        WebkitBackdropFilter: 'blur(20px) saturate(180%)'
-      } : {}}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
